@@ -1,5 +1,5 @@
 # Climate-Ecoregions
-Examines how climate (temperature and precipitation) vary across ecoregion.
+Examines how climate (temperature and precipitation) vary across ecoregions.
 
 ## File Descriptions
 *EC-1 - Imports and processes PRISM data. 
