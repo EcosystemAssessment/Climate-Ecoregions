@@ -1,0 +1,1 @@
+# Climate patterns for ecoregions
