@@ -40,3 +40,10 @@ pal.2 <- colorRampPalette(c("gold", "green","skyblue", "grey", "blue"))
 spplot(er.p, "DIVISION_N", col="white", col.regions=pal.2(12),
        colorkey = T, bty="n", lwd=0.4,
        sp.layout=list("sp.polygons", region.rpa, first=F))
+
+plot(er.dom)
+plot(er.p)
+
+
+writeOGR(er.p, ".","er_provinces",driver="ESRI Shapefile" )
+writeOGR(usa, ".","usa",driver="ESRI Shapefile" )
