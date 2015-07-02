@@ -47,3 +47,4 @@ plot(er.p)
 
 writeOGR(er.p, ".","er_provinces",driver="ESRI Shapefile" )
 writeOGR(usa, ".","usa",driver="ESRI Shapefile" )
+writeOGR(region.rpa, ".","region",driver="ESRI Shapefile")
