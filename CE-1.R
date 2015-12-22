@@ -26,8 +26,10 @@ usa <- spTransform(usa, crs)
 
 
 # Creat Domain and Division Shape files (Two methods of dissolving polygons)
-er.dom<- aggregate(er.p, vars= er.p$DOMAIN_NAM, dissolve=T) 
-er.div<- aggregate(er.p, vars= er.p$DIVISION_N, dissolve=T) # Not working
+er.dom<- aggregate(er.p, vars= list(er.p$DOMAIN_NAM), dissolve=T) 
+er.div<- aggregate(er.p, vars= list(er.p$DIVISION_N), dissolve=T) # Not working
+
+plot(er.div)
 
 library(maptools)
 er.dom<- unionSpatialPolygons(er.p, IDs=er.p$DOMAIN_NAM)
